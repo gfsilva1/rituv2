@@ -8,7 +8,7 @@
             <div class='card-3d-wrapper'>
               <div class='center-wrap front'>
                 <div class='section text-center'>
-                  <h4>Bem-vindo</h4>
+                  <h4>Bem-vindo!</h4>
                     <p>Please create your account.</p>
                   <div class='container'>
                     <div class='form-group'>
@@ -34,9 +34,9 @@
                     </div>
                   </div>
                   <%= f.input :remember_me, type: 'radio', class: 'forgot', as: :boolean if devise_mapping.rememberable? %>
-                  <%= render "devise/shared/links" %>
                   <div class="form-actions">
                     <%= f.button :submit, "Log in", class: 'btn-ghost' %>
+                    <%= render "devise/shared/links" %>
                   </div>
                 </div>
               </div>
