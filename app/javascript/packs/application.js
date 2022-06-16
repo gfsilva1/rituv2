@@ -9,7 +9,6 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import * as Turbo from "@hotwired/turbo"
 
-
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

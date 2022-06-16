@@ -149,6 +149,7 @@ li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  height: 70vh;
 }
 
 .carousel__slide {
