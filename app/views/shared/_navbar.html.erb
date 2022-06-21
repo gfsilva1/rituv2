@@ -1,34 +1,26 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
+<div class="navbar">
+  <div class="navbar">
     <%= link_to "#", class: "navbar-brand" do %>
-    <%= link_to image_tag("logo.png", width: 100), root_path %>
+    <%= link_to image_tag("ritu_logo.png", width: 100), root_path %>
     <% end %>
+  </div>
+  <div class="container-nav">
+      <h1>Learn</h1>
+      <h1>Academy</h1>
+      <h1>Movies</h1>
+      <h1>About Us</h1>
+  </div>
 
-<div>
-    <h1>Learn Academy Movies About Us</h1>
-</div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= image_tag("lupa.png", width: 20) %>
-          </li>
-          <li class="nav-item">
-            <%= image_tag("brazil.png", width: 20) %>
-          </li>
-          <li class="nav-item">
-            <%= image_tag("user.png", width: 20) %>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+    <ul class="container-nav">
+      <li >
+        <%= image_tag("white_glass.png", width: 20) %>
+      </li>
+      <li class="container-nav">
+        <%= image_tag("brazil.png", width: 20) %>
+      </li>
+      <li class="container-nav">
+        <%= image_tag("user.png", width: 20) %>
+      </li>
+    </ul>
   </div>
 </div>
