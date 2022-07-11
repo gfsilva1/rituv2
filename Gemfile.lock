@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/heartcombo/simple_form.git
-  revision: 23205201a935c7e52c39549756e2ec2e2ec47793
-  specs:
-    simple_form (5.1.0)
-      actionpack (>= 5.2)
-      activemodel (>= 5.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,8 +66,6 @@ GEM
       execjs (< 2.8.0)
     bcrypt (3.1.18)
     bindex (0.8.1)
-    bootsnap (1.12.0)
-      msgpack (~> 1.2)
     bootstrap (5.1.3)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.9.3, < 3)
@@ -112,7 +102,7 @@ GEM
       sassc (>= 1.11)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    i18n (1.10.0)
+    i18n (1.11.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -129,13 +119,12 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.15.0)
-    msgpack (1.5.2)
+    minitest (5.16.2)
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.3.5)
+    pg (1.4.1)
     popper_js (2.9.3)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -149,13 +138,13 @@ GEM
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3.1)
+    rack (2.2.4)
     rack-mini-profiler (2.3.4)
       rack (>= 1.2.0)
     rack-proxy (0.7.2)
       rack
-    rack-test (1.1.0)
-      rack (>= 1.0, < 3)
+    rack-test (2.0.2)
+      rack (>= 1.3)
     rails (6.1.6)
       actioncable (= 6.1.6)
       actionmailbox (= 6.1.6)
@@ -186,7 +175,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.6.0)
+    redis (4.7.1)
     regexp_parser (2.5.0)
     responders (3.0.1)
       actionpack (>= 5.0)
@@ -203,14 +192,17 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (4.2.1)
+    selenium-webdriver (4.3.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     semantic_range (3.0.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     spring (4.0.0)
-    sprockets (4.0.3)
+    sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.4.2)
@@ -250,14 +242,13 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails (= 10.2.5)
-  bootsnap (>= 1.4.4)
   bootstrap (~> 5.1, >= 5.1.3)
   byebug
   capybara (>= 3.26)
@@ -273,9 +264,9 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   redis (~> 4.0)
-  sass-rails (>= 6)
+  sass-rails
   selenium-webdriver
-  simple_form!
+  simple_form
   spring
   turbo-rails
   turbolinks (~> 5)
@@ -288,4 +279,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.32
+   2.3.15
