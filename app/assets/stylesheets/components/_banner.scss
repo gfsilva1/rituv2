@@ -1,10 +1,12 @@
 .banner {
   background-image:url(passistas.png);
+  background-size: cover;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 60px;
+
 }
 
 h1 {
@@ -16,18 +18,36 @@ h1 {
 h2 {
   color: whitesmoke;
   margin-left: 60px;
-  font-size: 40px;
+  font-size: 60px;
+  margin: 0;
+  line-height: 60px;
 }
 
 p {
   color: whitesmoke;
-  margin-left: 60px;
 }
 
-.but {
-  margin-left: 60px;
-}
+
 
 strong {
   color:#62C47D;
+}
+
+
+.btn-ghost {
+  color: $green;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  background: #62C47D;
+  opacity: 1;
+  color: whitesmoke;
+  text-decoration: none;
 }
